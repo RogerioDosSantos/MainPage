@@ -4,11 +4,11 @@
 <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>    
 
-    <meta itemprop="url" content="{{ site.url }}/{{ site.baseurl }}/{{ page.url }}">
+    <meta itemprop="url" content="{{ site.url }}{{ site.baseurl }}/{{ page.url }}">
 
-    <link href="{{ site.url }}/{{ site.baseurl }}/css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <link href="{{ site.url }}/{{ site.baseurl }}/css/style.css" rel='stylesheet' type='text/css' />
-    <link href="{{ site.url }}/{{ site.baseurl }}/css/post.css" rel='stylesheet' type='text/css' />
+    <link href="{{ site.url }}{{ site.baseurl }}/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="{{ site.url }}{{ site.baseurl }}/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="{{ site.url }}{{ site.baseurl }}/css/post.css" rel='stylesheet' type='text/css' />
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,8 +19,8 @@
         function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); }
     </script>
-    <script src="{{ site.url }}/{{ site.baseurl }}/js/jquery.min.js"></script>
-    <!--<script src="{{ site.url }}/{{ site.baseurl }}/js/jquery.easydropdown.js"></script>-->
+    <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.min.js"></script>
+    <!--<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.easydropdown.js"></script>-->
     <script type="application/javascript">
         $(document).ready(function() {
             $(".dropdown img.flag").addClass("flagvisibility");
@@ -64,17 +64,17 @@
                 <div class="col-md-12">
                     <div class="header-left">
                         <div class="logo">
-                            <a href="{{ site.url }}/{{ site.baseurl }}/"><img src="{{ site.url }}/{{ site.baseurl }}/resources/page/Logo/rogerio_logo.png" alt="" /></a>
+                            <a href="{{ site.url }}{{ site.baseurl }}/"><img src="{{ site.url }}{{ site.baseurl }}/resources/page/Logo/rogerio_logo.png" alt="" /></a>
                         </div>
                         <div class="menu">
-                            <a class="toggleMenu" href="{{ site.url }}/{{ site.baseurl }}/"><img src="{{ site.url }}/{{ site.baseurl }}/resources/page/Icon/nav.png" alt="" /></a>
+                            <a class="toggleMenu" href="{{ site.url }}{{ site.baseurl }}/"><img src="{{ site.url }}{{ site.baseurl }}/resources/page/Icon/nav.png" alt="" /></a>
                             <ul class="nav" id="nav">
-                                <li><a href="{{ site.url }}/{{ site.baseurl }}/blog.html">Blog</a></li>
-                                <li><a href="{{ site.url }}/{{ site.baseurl }}/about">About Me</a></li>
-                                <li><a href="{{ site.url }}/{{ site.baseurl }}/developments.html">My Developments</a></li>
+                                <li><a href="{{ site.url }}{{ site.baseurl }}/blog.html">Blog</a></li>
+                                <li><a href="{{ site.url }}{{ site.baseurl }}/about">About Me</a></li>
+                                <li><a href="{{ site.url }}{{ site.baseurl }}/developments.html">My Developments</a></li>
                                 <div class="clear"></div>
                             </ul>
-                            <script type="application/javascript" src="{{ site.url }}/{{ site.baseurl }}/js/responsive-nav.js"></script>
+                            <script type="application/javascript" src="{{ site.url }}{{ site.baseurl }}/js/responsive-nav.js"></script>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -90,8 +90,8 @@
                             </div>
                         </div>
                         <!----search-scripts---->
-                        <script src="{{ site.url }}/{{ site.baseurl }}/js/classie.js"></script>
-                        <script src="{{ site.url }}/{{ site.baseurl }}/js/uisearch.js"></script>
+                        <script src="{{ site.url }}{{ site.baseurl }}/js/classie.js"></script>
+                        <script src="{{ site.url }}{{ site.baseurl }}/js/uisearch.js"></script>
                         <script>
                             new UISearch(document.getElementById('sb-search'));
                         </script>
@@ -101,8 +101,8 @@
                                 <a class="active-icon c1" href="#"> </a>
                                 <ul class="sub-icon1 list">
                                     <div class="product_control_buttons">
-                                        <a href="#"><img src="{{ site.url }}/{{ site.baseurl }}/resources/page/Icon/edit.png" alt="" /></a>
-                                        <a href="#"><img src="{{ site.url }}/{{ site.baseurl }}/resources/page/Icon/close_edit.png" alt="" /></a>
+                                        <a href="#"><img src="{{ site.url }}{{ site.baseurl }}/resources/page/Icon/edit.png" alt="" /></a>
+                                        <a href="#"><img src="{{ site.url }}{{ site.baseurl }}/resources/page/Icon/close_edit.png" alt="" /></a>
                                     </div>
                                     <div class="clear"></div>
                                     
