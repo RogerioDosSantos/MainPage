@@ -57,11 +57,8 @@
         });
 
         var query = _options.parameters["search"];
-        if (lines == "")
-            query += "<br /><div>Any Result was found</div>";
-
-        var queryHtml = "<div class='search query'>" + query + "</div>"
-        $("div.search.query").replaceWith(queryHtml);
+        var queryHtml = "<input class='search query' type='text' value = '" + query + "'>"        
+        $("input.search.query").replaceWith(queryHtml);
         if (lines == "")
             return;
 
