@@ -57,7 +57,7 @@
         });
 
         var query = _options.parameters["search"];
-        var queryHtml = "<input class='search query .blg_search' name='search' value = '" + query + "'>";
+        var queryHtml = "<input class='search query blg_search' name='search' value = '" + query + "'>";
         $("input.search.query").replaceWith(queryHtml);
         if (lines == "")
             return;
