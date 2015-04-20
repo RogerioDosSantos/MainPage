@@ -47,7 +47,7 @@
             "<div class='blg_post_title'>" + title + "</div>" +
             "<p class='blg_post_content'>" + content + "</p>" +
             "<div class='blg_post_read_more'><a href='" + url + "'>Read More</a></div>" +
-            "</div>" +
+            "</div><div class='close_but'><i class='close1'></i></div>" +
             "</td>" +
             "</tr>";
         return ret;
