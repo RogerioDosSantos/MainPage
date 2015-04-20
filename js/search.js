@@ -42,8 +42,13 @@
 
     function buildSearchLineElement(url, title, content) {        
         var ret = "<tr class='search result row'>" +
-            "<td>" + title + "<br/>" + content + "</td>" +
-            "<td>" + url + "</td>" +
+            "<td>" +
+            "<div class='blg_post_right'>" + 
+            "<div class='blg_post_title'>" + title + "</div>" +
+            "<p class='blg_post_content'>" + content + "</p>" +
+            "<div class='blg_post_read_more'><a href='" + url + "'>Read More</a></div>" +
+            "</div>" +
+            "</td>" +
             "</tr>";
         return ret;
     }
