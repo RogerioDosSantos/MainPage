@@ -17,6 +17,10 @@
         var site = values[0];
         site = site.substring(0, site.length - 12)
         result.site = site;
+
+        //TODO: Remove
+        result.site = "http://rogeriodossantos.github.io";
+        
         values.splice(0, 1);
         if (values.length == 0)
             return result;
@@ -54,7 +58,7 @@
 
         var query = _options.parameters["search"];
         if (lines == "")
-            query = "<div>Any Result was found</div><br />" + query;
+            query += "<br /><div>Any Result was found</div>";
 
         var queryHtml = "<div class='search query'>" + query + "</div>"
         $("div.search.query").replaceWith(queryHtml);
