@@ -82,16 +82,16 @@ Installing Synergy on Raspberry PI and run it as Client
 * Install the Synergy Software running the following command:
 
 
-    sudo apt-get install synergy
+     sudo apt-get install synergy
 
 
 * Run the Synergy client connecting on the Windows Server machine:
 
 
-    synergyc <Windows Server IP>
+     synergyc <Windows Server IP>
 
 
-    E.g.: synergyc 10.168.23.204
+     E.g.: synergyc 10.168.23.204
 
 
 Done! Now you can use your mouse and keyboard on both machines
