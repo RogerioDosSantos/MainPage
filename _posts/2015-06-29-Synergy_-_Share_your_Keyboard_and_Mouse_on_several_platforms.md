@@ -6,7 +6,7 @@ type: 'Blog'
 subject: 'Synergy - Share your Keyboard and Mouse on several platforms'
 title: 'Synergy - Share your Keyboard and Mouse on several platforms'
 category: 'LeeL Blog'
-image: 'post_curiosity.jpg'
+image: 'post_tools.jpg'
 author: 'Rogerio dos Santos'
 ---
 
@@ -78,7 +78,7 @@ Installing Synergy on Raspberry PI and run it as Client
 ------------------------
 
 
-*Open the LXTerminal
+* Open the LXTerminal
 * Install the Synergy Software running the following command:
 
 
