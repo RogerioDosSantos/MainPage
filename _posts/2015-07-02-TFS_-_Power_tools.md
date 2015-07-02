@@ -6,7 +6,7 @@ type: 'Blog'
 subject: 'TFS - Power tools'
 title: 'TFS - Power tools'
 category: 'LeeL Blog'
-image: 'post_blog.jpg'
+image: 'post_tools.jpg'
 author: 'Rogerio dos Santos'
 ---
 
