@@ -4,7 +4,7 @@ title: Blog
 ---
 
     {% for post in site.posts %}
-    {% if post.type == 'blog' %}
+    {% if (post.type == 'blog') || (post.type == 'Blog') %}
 <div class="blg_post">
 
     <div class="blg_post_left">
