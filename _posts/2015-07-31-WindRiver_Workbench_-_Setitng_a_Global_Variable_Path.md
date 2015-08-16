@@ -6,7 +6,7 @@ type: 'Blog'
 subject: 'WindRiver Workbench - Setitng a Global Variable Path'
 title: 'WindRiver Workbench - Setitng a Global Variable Path'
 category: 'LeeL Blog'
-image: 'post_blog.jpg'
+image: 'post_development.jpg'
 author: 'Rogerio dos Santos'
 ---
 
