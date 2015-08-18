@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 resource_folder: 'post'
 type: 'Blog'
 subject: 'WindRiver Workbench - Setitng a Global Variable Path'
