@@ -2,7 +2,7 @@
 layout: post
 published: true
 resource_folder: 'post'
-type: 'Blog'
+type: 'development'
 subject: 'Schneider - ITME view app'
 title: 'Schneider - ITME view app'
 category: 'LeeL Blog'
