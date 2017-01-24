@@ -15,7 +15,7 @@ author: 'Rogerio dos Santos'
 The ITMEViewApp System Platform Object facilitates a seamless integration of InTouch Machine Edition to System Platform and Historian.
 
 
-<iframe width="854" height="480" src="youtu.be/oJZlanqxwQo" frameborder="0" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/watch?v=oJZlanqxwQo" frameborder="0" allowfullscreen></iframe>
 
 
 Native integration with System Platform through the new ITMEViewApp object
