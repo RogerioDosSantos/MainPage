@@ -2,11 +2,11 @@
 layout: post
 published: true
 resource_folder: 'post'
-type: 'development'
+type: 'Blog'
 subject: 'Indusoft - IoTView'
 title: 'Indusoft - IoTView'
 category: 'LeeL Blog'
-image: 'post_scada.jpg'
+image: 'post_engineering.jpg'
 author: 'Rogerio dos Santos'
 ---
 
@@ -24,7 +24,7 @@ IoTView features:
  - A very small footprint and low system requirements
 
 
-{% include pdf.html path="Developments/IoTIWS.pdf" %}
+
 
 
 
