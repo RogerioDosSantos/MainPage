@@ -12,34 +12,46 @@ author: 'Rogerio dos Santos'
 
 
 
-The ITMEViewApp System Platform Object facilitates a seamless integration of InTouch Machine Edition to System Platform and Historian.
+Installation for Windows 8
+===
+
+WindRiver does not support Windows 8 for VxWorks 6.9. They have not tested this environment for the simulator. Windows 7, 64-bit, is the latest Windows OS supported by this platform. 
+
+However, within the 6.9 installation should contain a 32-bit and 64-bit WRTAP driver (C:\WindRiver\vxworks-6.9\host\x86-win32\bin\wrtapInstaller.exe or C:\WindRiver\vxworks-6.9\host\x86-win32\bin\x86_64\wrtapInstaller.exe). This driver can be used for the simulator be able to have a TCP/IP communication with your computer.
+
+Below is an image of my network properties after the installation and configuration.
+
+Note: The connection should be Active to get the simulator to work with network, however, if you are not connecting with the VxWorks simulator, you should keep the WRTAP connection disabled, mainly if you are using Windows 8, since it can cause you network problems on your standard network.
+
+{% include image.html path="VxWorks/1.png" %}
+
+The default VxSimnetd and WRTAP drivers should be set to use the same subnet / IP address. To do so, create a configuration file (NDC.txt) into the WindRiver directory (C:\WindRiver) and add the following configuration as shown on the image below: 
+
+Note that the IP Address on the configuration file allow connection from the same network address configured on the WRTAP driver (192.168.200.x). 
+
+{% include image.html path="VxWorks/2.png" %}
+
+Your Remote System configuration, on the Wind River Workbench, should also point to the same network using simnet:
+
+{% include image.html path="VxWorks/3.png" %}
+
+Note: You might need to change the Windows Firewall configuration for your new WRTAP connection to be able to use your local network card. 
 
 
-<iframe width="854" height="480" src="youtu.be/oJZlanqxwQo" frameborder="0" allowfullscreen></iframe>
+Execution
+===
 
+Launch the vxsimnetd from a Windriver shell (VxWorks Development Shell) that is opened in Administrator mode.
 
-Native integration with System Platform through the new ITMEViewApp object
+type: vxsimnetd -f C:\WindRiver\NDC.txt -s
 
+{% include image.html path="VxWorks/4.png" %}
 
-- Manage ITME applications from the ArchestrA IDE and centralized Galaxy Repository. Easily and naturally integrate and synchronize tag values, and alarm status from ITME runtime stations with System Platform.
+Launch your simulator:
 
+{% include image.html path="VxWorks/5.png" %}
 
-- Launch the ITME IDE from System Platform, so the user can create/modify an ITME project.
+Now you might have the configured address and ping your VxWorks simulator for your computer command prompt.
 
-
-- Store/Retrieve an ITME project from the ArchestrA System Repository.
-
-
-- Automatically expose tags (including their values) from the ITME project as attributes of the object in System Platform.
-
-
-- Automatically share the Alarm Status from the ITME project as attributes of the object in System Platform (including acknowledgment status).
-
-
-- Allow the user to easily set tags from the ITME project to be saved into the Wonderware Historian.
-
-
-- Deploy an ITME project to a runtime station from System Platform.
-
-
-- Select and deploy the same project to several InTouch Machine Runtime – maintaining thousands of complex relationships from a central place
+{% include image.html path="VxWorks/6.png" %}
+{% include image.html path="VxWorks/7.png" %}
