@@ -2,7 +2,7 @@
 layout: post
 published: true
 resource_folder: 'post'
-type: 'Blog'
+type: 'development'
 subject: 'Indusoft - IoTView'
 title: 'Indusoft - IoTView'
 category: 'LeeL Blog'
@@ -24,7 +24,7 @@ IoTView features:
  - A very small footprint and low system requirements
 
 
-
+{% include pdf.html path="Developments/IoTIWS.pdf" %}
 
 
 
